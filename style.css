@@ -1,5 +1,28 @@
 h1{
     text-align: center;
+    margin:0;
+    color:#D50000;
+    font-size: 40px;
+}
+
+h3{
+    text-align: center;
+}
+
+header{
+    background-color: white;
+    padding: 20px;
+}
+
+body{
+    background-color: #EFEBE9;
+    margin:0;
+}
+
+main{
+    width: 98%;
+    height:900px;
+    padding: 5px;
 }
 
 .input{
@@ -9,6 +32,7 @@ h1{
     height:550px;
     border-radius: 9px;
     background-color: #F5F5F5;
+    margin:0 auto;
 }
 
 .display-left,
@@ -52,13 +76,16 @@ table tr:hover td{
 }
 
 .statement{
-    font-size: 24px;
+    font-size: 33px;
 }
 
 .red1{
     color: red;
+    font-family: 'Oxanium';
+    
 }
 
 .green1{
     color: green;
+    font-family: 'Simonetta';
 }

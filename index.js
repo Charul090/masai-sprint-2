@@ -72,6 +72,12 @@ function updateLeftContent(e){
     row.addEventListener("click",deleteContent);
 
     table_left.appendChild(row);
+
+    var input1 = document.querySelector("#dish");
+    var input2 = document.querySelector("#dish-cal");
+
+    input1.value="";
+    input2.value="";
 }
 
 function getCalorieConsumed(){
@@ -103,7 +109,7 @@ function calculate(){
     var info=document.querySelector(".info");
 
     info.textContent="";
-    
+
     var calorie_consumed = getCalorieConsumed();
 
     var calorie_burned = getCalorieBurned();
