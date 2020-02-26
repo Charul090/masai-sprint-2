@@ -36,9 +36,13 @@ function updateRightContent(e){
         cell2.textContent=300;
     }
 
+    else if(exercise_name === "workout"){
+        cell1.textContent="Workout";
+        cell2.textContent=270;
+    }
     else{
         if(exercise_name === "cycling"){
-            cell1.textContent="cycling";
+            cell1.textContent="Cycling";
             cell2.textContent=250;
         }
     }
