@@ -149,14 +149,14 @@ function displayInfo(net_calories,calorie_consumed,calorie_burned){
     if(net_calories < 0){
         line3.textContent="Net loss="+Math.abs(net_calories)+" kcal";
         unique.textContent=fat;
-        line4.textContent="You will lose "+unique.textContent+" kgs in 30 days";
+        line4.textContent="You will lose approx. "+unique.textContent+" kgs in 30 days";
         line4.setAttribute("class","statement green1");
     }
 
     else if (net_calories > 0){
         line3.textContent="Net gain="+net_calories+" kcal";
         unique.textContent=fat;
-        line4.textContent="You will gain "+unique.textContent+" kgs in 30 days";
+        line4.textContent="You will gain approx. "+unique.textContent+" kgs in 30 days";
         line4.setAttribute("class","statement red1");
     }
     else{
