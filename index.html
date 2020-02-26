@@ -24,7 +24,7 @@
                         <label for="dish">Dish</label>
                         <input id="dish" name="dish" type="text">
                         <br>
-                        <label for="dish-cal">Calories</label>
+                        <label for="dish-cal">Calories Gained</label>
                         <input id="dish-cal" type="number" name="calories" maxlength="9999">
                         <br>
                         <br>
@@ -33,7 +33,12 @@
                 </div>
                 <div class="right">
                     <div class="display-right">
-                        
+                        <table class="table-right">
+                            <tr>
+                                <th>Exercise</th>
+                                <th>Calories Burned</th>
+                            </tr>
+                        </table>
                     </div>
                     <form id="form2">
                         <label for="exercise">Exercise</label>
@@ -43,8 +48,16 @@
                             <option value="swimming">Swimming</option>
                             <option value="walking">Walking</option>
                             <option value="workout">Workout</option>
-                            <option value="zumba">Zumba</option>
                         </select>
+                        <br>
+                        <br>
+                        <label for="gender">Gender</label>
+                        <select id="gender">
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                        </select>
+                        <br>
+                        <br>
                         <button type="submit" id="btn2">ADD</button>
                     </form>
                 </div>
@@ -53,7 +66,9 @@
                 <div class="submit-all">
                     <button id="btn3">SUBMIT</button>
                 </div>
-                <div></div>
+                <div class="info">
+                    
+                </div>
             </div>
         </main>
     </body>
