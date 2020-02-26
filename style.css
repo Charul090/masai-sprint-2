@@ -39,3 +39,13 @@ table tr:hover{
     color:white;
 }
 
+.submit-all{
+    margin:10px auto;
+    width:100px;
+    height: 60px;
+}
+
+#btn3{
+    height:60px;
+    width:100px;
+}

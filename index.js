@@ -1,4 +1,5 @@
 var form_1=document.getElementById("form1");
+var submit_button=document.getElementById("btn3");
 
 function deleteContent(e){
     if(e.target.nodeName === "TD"){
@@ -28,4 +29,25 @@ function updateLeftContent(e){
     table_left.appendChild(row);
 }
 
+function getCalorieConsumed(){
+
+    var calorie_info=document.querySelectorAll(".table-left>tr>td:nth-child(2)");
+
+    var calorie_consumed=0;
+
+    for(var i=0;i<calorie_info.length;i++){
+        calorie_consumed+=Number(calorie_info[i].textContent)
+    }
+
+    return calorie_consumed;
+}
+
+function calculate(){
+    var calorie_consumed=getCalorieConsumed();
+
+    console.log(calorie_consumed)
+
+}
 form_1.addEventListener("submit",updateLeftContent);
+
+submit_button.addEventListener("click",calculate);
