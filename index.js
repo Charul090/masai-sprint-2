@@ -171,6 +171,7 @@ function displayInfo(net_calories,calorie_consumed,calorie_burned){
 
     var info1=document.querySelector(".info");
     info1.append(line1,line2,line3,line4);
+    info1.style.padding="6px";
 }
 
 form_1.addEventListener("submit",updateLeftContent);
