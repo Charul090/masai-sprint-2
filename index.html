@@ -13,14 +13,19 @@
             <div class="input">
                 <div class="left">
                     <div class="display-left">
-                        
+                        <table class="table-left">
+                            <tr>
+                                <th>Dish Name</th>
+                                <th>Calories</th>
+                            </tr>
+                        </table>
                     </div>
                     <form id="form1">
                         <label for="dish">Dish</label>
                         <input id="dish" name="dish" type="text">
                         <br>
-                        <label for="break-cal">Calories</label>
-                        <input id="break-cal" type="number" name="calories">
+                        <label for="dish-cal">Calories</label>
+                        <input id="dish-cal" type="number" name="calories" maxlength="9999">
                         <br>
                         <br>
                         <button type="submit" id="btn1">ADD</button>
